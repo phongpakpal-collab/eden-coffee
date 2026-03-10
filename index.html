@@ -389,20 +389,66 @@ footer {
 .reveal { opacity:0; transform:translateY(28px); transition: opacity .75s ease, transform .75s ease; }
 .reveal.vis { opacity:1; transform:translateY(0); }
 
-@media (max-width:900px){
-  nav { padding:16px 24px; }
-  .nav-links { display:none; }
-  .hero { grid-template-columns:1fr; padding:100px 24px 48px; }
-  .hero-product { order:-1; }
-  .product-img-wrap img { max-width:300px; }
+/* ── TABLET ── */
+@media (max-width:1024px){
+  .hero { padding:100px 40px 60px; gap:24px; }
+  .story { padding:80px 40px; gap:48px; }
+  .tasting { padding:80px 40px; }
   .specs-strip { flex-wrap:wrap; }
-  .spec-cell { flex:0 0 50%; border-bottom:1px solid rgba(255,255,255,.08); }
-  .story { grid-template-columns:1fr; padding:60px 24px; }
-  .tasting { padding:60px 24px; }
-  .tasting-inner { grid-template-columns:1fr; }
-  .storage { padding:40px 24px; flex-direction:column; }
-  .order { padding:80px 24px; }
-  footer { padding:28px 24px; flex-direction:column; gap:12px; text-align:center; }
+  .spec-cell { flex:0 0 33.33%; border-bottom:1px solid rgba(255,255,255,.08); }
+  .order { padding:100px 40px; }
+  .storage { padding:48px 40px; }
+  footer { padding:32px 40px; }
+}
+
+/* ── MOBILE ── */
+@media (max-width:768px){
+  nav { padding:14px 20px; }
+  .nav-links { display:none; }
+  .nav-btn { padding:9px 18px; font-size:11px; }
+  .hero { grid-template-columns:1fr; padding:88px 20px 48px; gap:32px; min-height:auto; }
+  .hero-product { order:-1; display:flex; justify-content:center; }
+  .product-img-wrap img { max-width:260px; }
+  .weight-pill { bottom:10px; right:0; }
+  .hero-title { font-size:64px; }
+  .hero-tags { gap:8px; }
+  .htag { font-size:10px; padding:6px 12px; }
+  .hero-cta { flex-wrap:wrap; }
+  .fruit-float { font-size:36px !important; opacity:0.6; }
+  .specs-strip { flex-wrap:wrap; }
+  .spec-cell { flex:0 0 50%; padding:24px 20px; }
+  .spec-val { font-size:16px; }
+  .story { grid-template-columns:1fr; padding:48px 20px; gap:32px; }
+  .story-title { font-size:36px; }
+  .story-body { font-size:14px; }
+  .pcard { padding:18px 20px; }
+  .story-banner { margin-top:32px; border-radius:10px; }
+  .tasting { padding:48px 20px; }
+  .tasting-inner { grid-template-columns:1fr; gap:40px; }
+  .tasting-title { font-size:36px; }
+  .flavor-cards { grid-template-columns:1fr 1fr; gap:10px; }
+  .flavor-card { padding:16px; }
+  .flavor-emoji { font-size:22px; }
+  .flavor-visual { min-height:320px; }
+  .fw-ring-1 { width:280px; height:280px; }
+  .fw-ring-2 { width:190px; height:190px; }
+  .fw-ring-3 { width:100px; height:100px; }
+  .storage { padding:36px 20px; flex-direction:column; gap:20px; text-align:center; }
+  .storage-heading { font-size:24px; }
+  .order { padding:64px 20px; }
+  .order-title { font-size:56px; }
+  .order-btns { flex-direction:column; align-items:center; }
+  .btn-order-main, .btn-order-ghost { width:100%; max-width:280px; text-align:center; padding:16px 32px; }
+  footer { padding:24px 20px; flex-direction:column; gap:10px; text-align:center; }
+}
+
+/* ── SMALL MOBILE (iPhone SE etc.) ── */
+@media (max-width:390px){
+  .hero-title { font-size:52px; }
+  .product-img-wrap img { max-width:220px; }
+  .spec-cell { flex:0 0 100%; }
+  .flavor-cards { grid-template-columns:1fr; }
+  .order-title { font-size:44px; }
 }
 
   
